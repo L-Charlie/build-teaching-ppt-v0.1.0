@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local configuration and generated reports
+.env
+*.log
+*.audit.json
+
+# Generated presentation artifacts
+*.pptx
+*.pdf
+*.svg
+exports/
+svg_output/
+backup/
+history/
+
+# User-provided source material and binary assets
+sources/
+images/
+shared-assets/
+template/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

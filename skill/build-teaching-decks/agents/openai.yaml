@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Teaching Decks"
+  short_description: "Build consistent teaching PPT series from source materials"
+  default_prompt: "Use $build-teaching-decks to create or improve a teaching presentation from my source files."
