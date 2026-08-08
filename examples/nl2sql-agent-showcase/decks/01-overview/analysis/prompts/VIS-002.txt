@@ -1,0 +1,12 @@
+Use case: stylized-concept
+Asset type: wide presentation illustration for a technical keynote
+Primary request: Create a wide three-part conceptual scene explaining why plausible SQL can still be untrustworthy: intent drift, unsafe execution, and semantic mismatch.
+Input images: VIS-001 is the style and material reference only.
+Scene/backdrop: Near-black technical stage with restrained luminous data traces and a clean lower edge for editable captions.
+Subject: Left cluster shows natural-language particles taking the wrong path before reaching a database. Center cluster shows a database protected by a vivid safety barrier that blocks a hazardous query fragment. Right cluster shows a database result whose chart-like output points toward the wrong business meaning. Connect all three clusters with one continuous data-flow trajectory.
+Style/medium: Premium editorial 3D technical illustration matching the reference image, precise translucent data forms, crisp studio rendering, sophisticated rather than playful.
+Composition/framing: 16:9 wide composition, three evenly spaced clusters, strong silhouettes, generous breathing room, no crop-sensitive details at the edges.
+Lighting/mood: Controlled dark-stage lighting with electric cyan and blue highlights plus restrained coral warning accents.
+Color palette: #0B0F14, #2E7CF6, #45D0FF, #FF6B5E, #F7F9FC.
+Constraints: No embedded labels; all explanatory text will be added as editable PowerPoint text.
+Avoid: text, letters, numbers, logos, watermarks, fake application UI, literal SQL code, busy cyberpunk city imagery.

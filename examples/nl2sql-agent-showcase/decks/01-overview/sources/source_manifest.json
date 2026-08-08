@@ -1,0 +1,24 @@
+{
+  "schema": "ppt-series-source-manifest.v1",
+  "project": "NL2SQL Agent",
+  "files": [
+    "README.md",
+    "SafeExecutor_Gate_implementation_plan.md",
+    "agent_team/contracts.py",
+    "agent_team/orchestrator.py",
+    "agent_team/pre_execution_gate.py",
+    "agent_team/executor.py",
+    "agent_team/nl2sql_judge.py",
+    "agent_team/refiner.py",
+    "tests/test_pre_execution_gate.py",
+    "tests/test_safe_executor.py",
+    "tests/test_judge_closed_loop.py",
+    "tests/test_retry_routing.py",
+    "tests/test_sql_artifact.py"
+  ],
+  "verification": {
+    "command": "env PYTHONPATH=<isolated-wsl-deps>:. python3 -m pytest tests -q",
+    "result": "25 passed in 29.36s",
+    "not_run": ["real model call", "BIRD benchmark"]
+  }
+}

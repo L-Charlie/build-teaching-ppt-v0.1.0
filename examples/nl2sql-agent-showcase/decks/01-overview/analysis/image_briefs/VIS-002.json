@@ -1,0 +1,39 @@
+{
+  "schema": "ppt-series-image-brief.v1",
+  "asset_id": "VIS-002",
+  "slide": 2,
+  "purpose": "Show three distinct reasons why a plausible SQL answer may still be untrustworthy",
+  "subject": "A wide three-part conceptual scene: intent drift, unsafe execution, and semantic mismatch",
+  "must_show": [
+    "left cluster: natural-language particles taking the wrong path before reaching a database",
+    "center cluster: a database protected by a vivid safety barrier with a blocked hazardous query fragment",
+    "right cluster: a successful database result whose chart-like output points to the wrong business meaning",
+    "three visually distinct clusters connected by one continuous data-flow trajectory"
+  ],
+  "style": {
+    "base_style": "premium editorial 3D technical illustration matching VIS-001",
+    "scene_profile": "conceptual",
+    "palette": ["#0B0F14", "#2E7CF6", "#45D0FF", "#FF6B5E", "#F7F9FC"],
+    "continuity_ids": ["VIS-001"]
+  },
+  "composition": {
+    "placement": "full-width upper visual band",
+    "aspect_ratio": "16:9",
+    "subject_position": "three evenly spaced clusters",
+    "reserved_whitespace": "clean lower edge for editable captions",
+    "background": "near-black technical stage with restrained luminous data traces"
+  },
+  "risk": "low",
+  "factual_basis": [],
+  "must_avoid": [
+    "text",
+    "letters",
+    "numbers",
+    "logos",
+    "watermarks",
+    "fake application UI",
+    "literal SQL code",
+    "busy cyberpunk city imagery"
+  ],
+  "disclosure": "provenance-only"
+}

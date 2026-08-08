@@ -1,0 +1,13 @@
+{
+  "schema": "ppt-series-visual-plan.v1",
+  "deck_id": "",
+  "status": "draft",
+  "approval_mode": "guided",
+  "image_backend": "unknown",
+  "budgets": {
+    "max_generated_assets": 8,
+    "max_candidates_per_task": 4,
+    "max_generation_attempts_per_asset": 2
+  },
+  "tasks": []
+}

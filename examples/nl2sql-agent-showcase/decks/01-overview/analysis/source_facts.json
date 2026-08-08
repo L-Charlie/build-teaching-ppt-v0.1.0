@@ -1,0 +1,12 @@
+{
+  "schema": "ppt-series-source-facts.v1",
+  "facts": [
+    {"id": "F01", "claim": "Every generated or repaired SQL returns through SafeExecutor.", "source": "agent_team/orchestrator.py"},
+    {"id": "F02", "claim": "Gate blocks high-certainty safety and structural failures, while semantic checks belong to Judge.", "source": "README.md and agent_team/pre_execution_gate.py"},
+    {"id": "F03", "claim": "Judge uses deterministic modes for Gate and database failures, and semantic LLM evaluation only after execution succeeds.", "source": "SafeExecutor_Gate_implementation_plan.md and agent_team/nl2sql_judge.py"},
+    {"id": "F04", "claim": "Retry budgets are gate=2, database=2, semantic=5, total SQL attempts=10.", "source": "agent_team/orchestrator.py"},
+    {"id": "F05", "claim": "Restricted re-schema is owned by Refiner, limited to one iteration and at most two tables.", "source": "agent_team/orchestrator.py and tests/test_judge_closed_loop.py"},
+    {"id": "F06", "claim": "No executor produces generated_unverified with success=false.", "source": "README.md and tests/test_retry_routing.py"},
+    {"id": "F07", "claim": "Current isolated WSL regression run passed 25 tests.", "source": "current pytest run"}
+  ]
+}

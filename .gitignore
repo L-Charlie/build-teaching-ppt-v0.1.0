@@ -7,25 +7,20 @@ __pycache__/
 .env
 *.log
 *.audit.json
+*.inspect.ndjson
 
-# Generated presentation artifacts
-*.pptx
-*.pdf
-*.svg
-exports/
-svg_output/
-backup/
-history/
+# Reproducible QA caches
+**/analysis/rendered/
+**/analysis/layouts/
 
-# User-provided source material and binary assets
-sources/
-images/
-shared-assets/
-template/
+# Local build output
+/work/
+/dist/
+/build/
+*.zip
 
 # OS and editor files
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
-

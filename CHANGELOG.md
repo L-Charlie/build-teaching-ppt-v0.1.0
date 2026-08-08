@@ -2,6 +2,24 @@
 
 All notable changes to this project are documented here.
 
+## [0.2.0] - 2026-08-08
+
+### Added
+
+- Renamed the installable Skill to `build-ppt-series` for teaching, technical, and business decks.
+- Added deck-wide visual planning, one broad candidate search pass, and just-in-time illustration
+  generation with user/source images taking priority.
+- Added image capability preflight, structured briefs and prompts, two-attempt generation records,
+  failure placeholders, provenance checks, and visual asset validation.
+- Added Codex and Claude Code backend rules without making PPT Master a universal dependency.
+- Added a validated 12-slide NL2SQL Agent showcase with generated illustrations and source records.
+- Added nine visual-workflow tests and bilingual README navigation.
+
+### Changed
+
+- Moved to the reusable series project layout and separated `spec_lock` from per-deck planning.
+- Kept generated showcase media under version control while excluding reproducible QA caches.
+
 ## [0.1.0] - 2026-08-03
 
 ### Added

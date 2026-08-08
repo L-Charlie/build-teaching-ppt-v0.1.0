@@ -1,0 +1,20 @@
+{
+  "schema": "ppt-series-generation-record.v1",
+  "asset_id": "VIS-001",
+  "backend": "host-imagegen",
+  "prompt_path": "../prompts/VIS-001.txt",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "accepted",
+      "assessment": "Correct transformation, clean white background, no embedded text, and consistent blue palette."
+    }
+  ],
+  "accepted_output": "../../images/generated/VIS-001.png",
+  "sha256": "c1282095bcbda335f25fd894c38225e831e12e40dbe7a027e18ed0c26cd59bca",
+  "provenance": {
+    "type": "generated",
+    "tool": "host-imagegen",
+    "created_for": "NL2SQL Agent showcase cover"
+  }
+}

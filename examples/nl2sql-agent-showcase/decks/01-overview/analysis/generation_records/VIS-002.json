@@ -1,0 +1,21 @@
+{
+  "schema": "ppt-series-generation-record.v1",
+  "asset_id": "VIS-002",
+  "backend": "host-imagegen",
+  "prompt_path": "../prompts/VIS-002.txt",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "no-output-returned",
+      "failure": "Generation call completed but did not expose an output artifact to the workspace."
+    },
+    {
+      "attempt": 2,
+      "status": "accepted",
+      "output": "../../images/generated/VIS-002.png",
+      "inspection": "Accepted: wide dark-stage composition, consistent materials, no text or watermark, usable crop."
+    }
+  ],
+  "accepted_output": "../../images/generated/VIS-002.png",
+  "sha256": "aca0834f610b5c6e016a36096333722ea7a27eba7386aa3d78b95e92caf54dcf"
+}

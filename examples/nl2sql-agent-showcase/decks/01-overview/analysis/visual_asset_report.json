@@ -1,0 +1,72 @@
+{
+  "schema": "ppt-series-visual-asset-report.v1",
+  "plan": "visual_asset_plan.json",
+  "ok": true,
+  "delivery_state": "eligible-for-final",
+  "task_count": 12,
+  "placeholders": [],
+  "errors": [],
+  "warnings": [],
+  "tasks": [
+    {
+      "asset_id": "VIS-001",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-002",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-003",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-004",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-005",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-006",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-007",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-008",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-009",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-010",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-011",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "asset_id": "VIS-012",
+      "status": "complete",
+      "errors": []
+    }
+  ]
+}

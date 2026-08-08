@@ -1,0 +1,15 @@
+Create one presentation illustration for asset VIS-001.
+Communication purpose: Represent natural language becoming a guarded database query without depicting factual evidence.
+Subject: Abstract speech-like data particles passing through a precise security gate and arriving at a database cylinder.
+Must visibly show: clear left-to-right transformation; one precise gate or checkpoint; database form at the destination; calm trustworthy engineering tone.
+Base visual style: precise editorial 3D illustration, translucent acrylic and fine graphite details.
+Scene profile: conceptual.
+Palette guidance: #FFFFFF, #101418, #EDEDED, #6DCBF4, #3D8DFF.
+Maintain continuity for IDs: nl2sql-data-language.
+Aspect ratio: 1:1.
+Placement context: right half of a 16:9 presentation cover.
+Subject position: center-right.
+Reserved whitespace: clean outer margins; no text zone inside image.
+Background: pure white with subtle grounding shadow.
+Avoid: text inside the image; SQL code inside the image; labels or arrows inside the image; logos; watermarks; fake user interfaces; dark background; purple gradient; text, labels, captions, arrows, logos, signatures, or watermarks inside the image; unsupported factual details or misleading evidence-like treatment.
+Leave all educational or explanatory text to editable PowerPoint elements. Return a clean bitmap composition that fits the stated frame.

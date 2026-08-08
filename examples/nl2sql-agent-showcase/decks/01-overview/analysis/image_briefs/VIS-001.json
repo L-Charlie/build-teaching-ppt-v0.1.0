@@ -1,0 +1,25 @@
+{
+  "schema": "ppt-series-image-brief.v1",
+  "asset_id": "VIS-001",
+  "slide": 1,
+  "purpose": "Represent natural language becoming a guarded database query without depicting factual evidence",
+  "subject": "Abstract speech-like data particles passing through a precise security gate and arriving at a database cylinder",
+  "must_show": ["clear left-to-right transformation", "one precise gate or checkpoint", "database form at the destination", "calm trustworthy engineering tone"],
+  "style": {
+    "base_style": "precise editorial 3D illustration, translucent acrylic and fine graphite details",
+    "scene_profile": "conceptual",
+    "palette": ["#FFFFFF", "#101418", "#EDEDED", "#6DCBF4", "#3D8DFF"],
+    "continuity_ids": ["nl2sql-data-language"]
+  },
+  "composition": {
+    "placement": "right half of a 16:9 presentation cover",
+    "aspect_ratio": "1:1",
+    "subject_position": "center-right",
+    "reserved_whitespace": "clean outer margins; no text zone inside image",
+    "background": "pure white with subtle grounding shadow"
+  },
+  "risk": "low",
+  "factual_basis": [],
+  "must_avoid": ["text inside the image", "SQL code inside the image", "labels or arrows inside the image", "logos", "watermarks", "fake user interfaces", "dark background", "purple gradient"],
+  "disclosure": "provenance-only"
+}

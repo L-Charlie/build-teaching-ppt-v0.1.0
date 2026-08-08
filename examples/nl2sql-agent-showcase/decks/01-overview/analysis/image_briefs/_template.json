@@ -1,0 +1,31 @@
+{
+  "schema": "ppt-series-image-brief.v1",
+  "asset_id": "VIS-001",
+  "slide": 1,
+  "purpose": "",
+  "subject": "",
+  "must_show": [],
+  "style": {
+    "base_style": "",
+    "scene_profile": "conceptual",
+    "palette": [],
+    "continuity_ids": []
+  },
+  "composition": {
+    "placement": "right",
+    "aspect_ratio": "4:3",
+    "subject_position": "center",
+    "reserved_whitespace": "left 35%",
+    "background": "simple"
+  },
+  "risk": "low",
+  "factual_basis": [],
+  "must_avoid": [
+    "text inside the image",
+    "labels or arrows inside the image",
+    "logos",
+    "watermarks",
+    "unsupported factual detail"
+  ],
+  "disclosure": "provenance-only"
+}

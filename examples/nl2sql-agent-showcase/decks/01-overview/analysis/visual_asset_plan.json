@@ -1,0 +1,39 @@
+{
+  "schema": "ppt-series-visual-plan.v1",
+  "deck_id": "01-overview",
+  "status": "complete",
+  "approval_mode": "automatic",
+  "image_backend": "available",
+  "budgets": {
+    "max_generated_assets": 2,
+    "max_candidates_per_task": 4,
+    "max_generation_attempts_per_asset": 2
+  },
+  "tasks": [
+    {"asset_id": "VIS-001", "slide": 1, "purpose": "Conceptual opening image for language passing through a safety gate into a database", "visual_need": "helpful", "route": "generated", "risk": "low", "scene_profile": "conceptual", "brief": "image_briefs/VIS-001.json", "status": "complete", "selected_asset": "../images/generated/VIS-001.png", "sha256": "c1282095bcbda335f25fd894c38225e831e12e40dbe7a027e18ed0c26cd59bca", "generation_record": "generation_records/VIS-001.json", "provenance": {"type": "generated", "backend": "host-imagegen", "prompt_path": "prompts/VIS-001.txt"}},
+    {"asset_id": "VIS-002", "slide": 2, "purpose": "Conceptual framing of intent drift, execution risk, and semantic mismatch", "visual_need": "helpful", "route": "generated", "risk": "low", "scene_profile": "conceptual", "brief": "image_briefs/VIS-002.json", "status": "complete", "selected_asset": "../images/generated/VIS-002.png", "sha256": "aca0834f610b5c6e016a36096333722ea7a27eba7386aa3d78b95e92caf54dcf", "generation_record": "generation_records/VIS-002.json", "provenance": {"type": "generated", "backend": "host-imagegen", "prompt_path": "prompts/VIS-002.txt"}},
+    {
+      "asset_id": "VIS-003",
+      "slide": 3,
+      "visual_need": "required",
+      "route": "native",
+      "risk": "low",
+      "status": "complete",
+      "slide_objects": ["stage-1", "stage-2", "stage-3", "stage-4", "stage-5", "stage-6"],
+      "candidates": [
+        {"url": "https://miro.medium.com/v2/resize%3Afit%3A1400/1%2A_LeKU9ojKe9OxmEL8zM4LQ.png", "decision": "rejected", "reason": "single-pass pipeline does not match this repository"},
+        {"url": "https://www.blazesql.com/images/cms-416375nl2sql-pipeline.png", "decision": "rejected", "reason": "external architecture and unclear reuse terms"},
+        {"url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/04/09/ML-18212-nl2sql-high-level-workflow.png", "decision": "rejected", "reason": "vendor-specific architecture"}
+      ]
+    },
+    {"asset_id": "VIS-004", "slide": 4, "visual_need": "helpful", "route": "native", "risk": "low", "status": "complete", "slide_objects": ["contract-code-panel", "contract-code"]},
+    {"asset_id": "VIS-005", "slide": 5, "visual_need": "required", "route": "native", "risk": "medium", "status": "complete", "slide_objects": ["gate-block-panel", "gate-observe-panel"]},
+    {"asset_id": "VIS-006", "slide": 6, "visual_need": "required", "route": "native", "risk": "medium", "status": "complete", "slide_objects": ["executor-root", "executor-path-0", "executor-path-1", "executor-path-2"]},
+    {"asset_id": "VIS-007", "slide": 7, "visual_need": "helpful", "route": "native", "risk": "medium", "status": "complete", "slide_objects": ["judge-table"]},
+    {"asset_id": "VIS-008", "slide": 8, "visual_need": "required", "route": "native", "risk": "medium", "status": "complete", "slide_objects": ["budget-card-0", "budget-card-1", "budget-card-2"]},
+    {"asset_id": "VIS-009", "slide": 9, "visual_need": "helpful", "route": "native", "risk": "low", "status": "complete", "slide_objects": ["stop-dot-0", "stop-dot-1", "stop-dot-2"]},
+    {"asset_id": "VIS-010", "slide": 10, "visual_need": "required", "route": "native", "risk": "low", "status": "complete", "slide_objects": ["state-unverified", "state-verified"]},
+    {"asset_id": "VIS-011", "slide": 11, "visual_need": "helpful", "route": "native", "risk": "low", "status": "complete", "slide_objects": ["tests-stat-panel", "tests-list"]},
+    {"asset_id": "VIS-012", "slide": 12, "visual_need": "unnecessary", "route": "none", "risk": "low", "status": "complete"}
+  ]
+}
