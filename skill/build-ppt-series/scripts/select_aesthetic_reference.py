@@ -114,6 +114,9 @@ def route_or_select(
 
 
 def main() -> int:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--scene", required=True)
     parser.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)

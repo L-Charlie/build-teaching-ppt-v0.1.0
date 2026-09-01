@@ -7,7 +7,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPT_DIR))
 
-from select_aesthetic_reference import route_or_select, select
+from select_aesthetic_reference import DEFAULT_CATALOG, load_catalog, route_or_select, select
 
 
 def catalog(approved: bool = True) -> dict[str, object]:
@@ -55,6 +55,14 @@ class AestheticSelectionTests(unittest.TestCase):
         second = select(catalog(), "product-technology", self.constraints(), 42, "automatic")
         self.assertEqual(first["selected"], second["selected"])
         self.assertFalse(first["requires_confirmation"])
+
+    def test_bundled_catalog_has_two_unapproved_directions_per_scene(self) -> None:
+        sets = load_catalog(DEFAULT_CATALOG)["sets"]
+        scenes = {item["scene"] for item in sets}
+        self.assertEqual(len(scenes), 7)
+        self.assertEqual(len(sets), 14)
+        self.assertTrue(all(sum(item["scene"] == scene for item in sets) == 2 for scene in scenes))
+        self.assertTrue(all(item["approved"] is False for item in sets))
 
     def test_hard_exclusion_happens_before_random_selection(self) -> None:
         constraints = self.constraints()
