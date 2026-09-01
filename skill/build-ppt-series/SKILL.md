@@ -95,6 +95,26 @@ SERIES_ROOT/
 
 Keep page sequence, content, and page rhythm out of `series/spec_lock.md`.
 
+## Plan Content Before Applying Series Design
+
+For every new deck in a series:
+
+1. Inspect only the current sources and establish the source scope, audience, duration, and content
+   complexity.
+2. Independently estimate a page range and selected page count. Record the reason and set
+   `previous_deck_page_count_used: false`.
+3. Build the current deck's narrative, page purposes, and content sequence before consulting any
+   previous deck plan. Never load another deck's `deck_plan.md` as generation context.
+4. Apply the existing series lock only after the content structure is stable. Use it for visual
+   identity, not page count, sequence, rhythm, or page-to-page layout mapping.
+5. Complete current layout and visual decisions from each page's communication task.
+
+For a new series without a template, brand guide, explicit style, or existing lock, an approved
+aesthetic reference set may calibrate the initial series lock. Run
+`scripts/select_aesthetic_reference.py` after hard exclusions. Guided mode confirms the selected
+direction; automatic mode records it without interruption. Never use unapproved reference sets in
+production. Later decks reuse the confirmed series lock and do not select again.
+
 ## Plan Visuals Before Layout
 
 For every deck:
@@ -130,7 +150,10 @@ visuals may not be freely generated without explicit schematic approval and disc
    `S01_cover.svg`.
 4. Run applicable SVG and PPTX structural checks.
 5. Run `scripts/validate_visual_assets.py` and rendered visual QA.
-6. If an illustration still fails after two attempts, keep a simple `插图待补充` placeholder with
+6. For a continuing series, compare the current and previous deck plans with
+   `scripts/detect_structural_reuse.py`. A suspected page-for-page copy must be replanned or carry
+   an explicit user-reviewed justification.
+7. If an illustration still fails after two attempts, keep a simple `插图待补充` placeholder with
    its asset ID, continue other slides, and record the complete prompt, constraints, and failure.
    Any deck with unresolved placeholders is `draft/review`, never final.
 
@@ -140,6 +163,8 @@ visuals may not be freely generated without explicit schematic approval and disc
 - `init_series.py`: portable project initialization.
 - `audit_template.py`: standard-library OOXML template audit.
 - `sync_deck_spec.py`: deck-level execution snapshot.
+- `detect_structural_reuse.py`: same-count, same-position purpose/layout reuse gate.
+- `select_aesthetic_reference.py`: approved-reference hard filtering and uniform random selection.
 - `visual_preflight.py`: visual-plan, risk, budget, brief, and backend gate.
 - `compile_image_prompt.py`: structured brief to provider-neutral generation prompt.
 - `validate_visual_assets.py`: asset, provenance, placeholder, record, and hash validation.

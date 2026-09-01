@@ -24,6 +24,19 @@ sequence, page count, content outline, or page-by-page rhythm.
 - tone:
 - language:
 
+## Aesthetic Calibration
+
+- source: context-derived
+- scene: null
+- reference_set_id: null
+- random_seed: null
+- sampled_reference_page_ids: []
+- human_approved: false
+- purpose: quality calibration only; never a layout or page-sequence source
+
+Use this section only for an unconstrained new series. A template, brand guide, explicit user style,
+or existing lock takes priority. Later decks reuse this lock and do not select again.
+
 ## Canvas And Grid
 
 - aspect_ratio: 16:9

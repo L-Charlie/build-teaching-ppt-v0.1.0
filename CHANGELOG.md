@@ -2,6 +2,19 @@
 
 All notable changes to this project are documented here.
 
+## [Unreleased]
+
+### Added
+
+- Added independent page-count evidence and content-first planning for every new deck.
+- Added structural reuse detection for suspicious page-for-page series copies.
+- Added seven aesthetic scenes, fourteen direction records, hard exclusions, seeded uniform
+  selection, and human-approval gating.
+
+### Changed
+
+- Deck-level design snapshots no longer embed deck plans or page-by-page structure.
+
 ## [0.2.0] - 2026-08-08
 
 ### Added
@@ -33,4 +46,3 @@ All notable changes to this project are documented here.
 
 - Final editable-PPTX production depends on an agent host or separately configured backend.
 - No course materials, reference templates, fonts, or third-party media are included.
-

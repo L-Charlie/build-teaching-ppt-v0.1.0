@@ -43,6 +43,16 @@ presented to the user for decision.
 4. Retain original templates and sources; never overwrite them.
 5. Keep intermediate analysis and editable sources so work can resume across sessions.
 
+## Content-First Deck Planning
+
+For each new deck, inspect the current source scope first. Before reading a previous deck plan or
+applying series visuals, record audience, duration, content complexity, an estimated page range,
+the selected page count, and its reason. `previous_deck_page_count_used` must be `false`.
+
+Build the narrative, page purposes, and content sequence from the current material. Do not load a
+previous `deck_plan.md` into the generation context. A previous rendered deck may be sampled only
+for visual fidelity checks after the current structure is stable.
+
 ## Series Lock
 
 Resolve `series/spec_lock.md` before bulk production. Priority:
@@ -50,11 +60,18 @@ Resolve `series/spec_lock.md` before bulk production. Priority:
 1. supplied lock;
 2. full reference-deck extraction;
 3. explicit user design request;
-4. context-derived draft.
+4. approved aesthetic reference calibration for an unconstrained new series;
+5. context-derived draft when no approved reference set is available.
 
 The lock stores only series invariants. The deck plan stores page count, sequence, communication
 rhythm, source mapping, and current visual tasks. A confirmed first deck may become an approved
-reference, but later decks still receive new plans and layout mappings.
+reference, but later decks still receive new plans and layout mappings. Apply the lock after the
+current content structure is stable.
+
+An aesthetic reference is a quality-calibration input, not a layout source. Use it only when there
+is no template, brand guide, explicit style, or existing lock. Apply hard exclusions, then select
+uniformly from the remaining approved directions. Record the scene, set ID, seed, sampled page IDs,
+and approval state in the series lock. Do not select again for later decks.
 
 ## Deck And Visual Planning
 
@@ -78,6 +95,11 @@ Run `sync_deck_spec.py` only after the plan and deck overrides are sufficiently 
 
 Implement through the selected backend. Recompute layout selection by page function and content
 shape. Do not copy the previous deck's page sequence or mechanically map page N to page N.
+
+For a continuing series, run `detect_structural_reuse.py` against the previous and current plans.
+Equal page counts are valid when independently justified, but equal counts plus at least 70%
+same-position purpose and layout-family matches are `suspected_template_copy`. Replan before
+production, or record a user-reviewed justification when the content genuinely requires it.
 
 Use stable page dimensions and safe margins. Keep text, labels, arrows, and citations editable.
 Respect the visual budget as a cap. In guided mode, use the first generated slide as the style

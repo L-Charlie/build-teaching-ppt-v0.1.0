@@ -13,6 +13,8 @@ export, and QA into a recoverable project instead of an opaque one-off file.
 
 - new-style, reference-template, existing-lock, and existing-deck improvement routes;
 - separate series `spec_lock` and deck `deck_plan`, preserving identity without copying page order;
+- independently derive each deck's page count and content structure before applying series visuals;
+- detect suspicious same-count, same-position purpose and layout reuse;
 - full reference-deck audit and retained source template;
 - visual priority: user assets, source/template assets, licensed external assets, real screenshots,
   native diagrams, generated illustrations, then no visual;
@@ -20,6 +22,12 @@ export, and QA into a recoverable project instead of an opaque one-off file.
 - image-backend, aspect-ratio, risk, and budget preflight, with at most two automatic attempts;
 - explicit illustration placeholders, prompts, and failure records when generation cannot complete;
 - PPTX/SVG structural checks, provenance validation, full rendering, and per-slide visual QA.
+
+The repository defines seven scenes, fourteen aesthetic directions, and hard-exclusion-then-uniform
+selection. These references calibrate judgment about substance, hierarchy, and workplace usability;
+they are not reusable layouts. Original reference pages have not yet completed production and human
+review, so production selection rejects these unapproved sets instead of treating text directions
+as templates.
 
 ## Backend Model
 

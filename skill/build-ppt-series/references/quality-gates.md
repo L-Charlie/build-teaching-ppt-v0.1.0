@@ -11,8 +11,22 @@
 
 - Validate series lock state, version, origin, and template fidelity.
 - Ensure deck-specific page sequence and rhythm are outside the series lock.
+- Require an independently justified page range and page count with
+  `previous_deck_page_count_used: false`.
 - Confirm each page has purpose, source, density, layout, and visual decision.
 - Ensure layout mapping is content-driven, not copied by page number.
+
+For continuing series, run:
+
+```bash
+python3 scripts/detect_structural_reuse.py \
+  PREVIOUS_DECK/analysis/deck_plan.md \
+  CURRENT_DECK/analysis/deck_plan.md \
+  --report CURRENT_DECK/analysis/structural_reuse_report.json
+```
+
+`suspected_template_copy` blocks production unless the current plan is redesigned or a concrete,
+user-reviewed justification is recorded. Equal page counts alone do not fail this gate.
 
 ## 3. Visual Preflight
 

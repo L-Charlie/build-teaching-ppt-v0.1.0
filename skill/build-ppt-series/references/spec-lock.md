@@ -16,11 +16,23 @@ layouts, or reusable pages.
 typography, color roles, layout families, template behavior, illustration system, citation/footer
 rules, invariants, allowed variation, and change state.
 
-`decks/DECK_ID/spec_lock.md` is a generated execution snapshot containing parent hashes plus the
-current deck plan and overrides. Do not edit it directly.
+`decks/DECK_ID/spec_lock.md` is a generated visual execution snapshot containing parent and input
+hashes plus the inherited series lock. It references the current deck plan and overrides but never
+embeds their content. Do not edit it directly and never use another deck's snapshot to structure a
+new deck.
 
 Never place current page count, page sequence, page-by-page rhythm, current examples, or current
 visual tasks in the series lock.
+
+## Aesthetic Calibration
+
+For an unconstrained new series, an approved aesthetic reference set may help derive the first
+lock. Store only the selected scene, reference-set ID, random seed, sampled reference-page IDs,
+human-approval state, and calibration intent. Do not store or derive a page sequence, coordinate
+map, fixed layout recipe, or page-to-reference mapping.
+
+Templates, brand guides, explicit styles, and existing locks take priority and skip random
+selection. Later decks reuse the confirmed lock without selecting another reference set.
 
 ## Illustration Layer
 
