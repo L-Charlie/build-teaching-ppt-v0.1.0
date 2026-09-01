@@ -1,0 +1,175 @@
+{
+  "schema": "ppt-series-aesthetic-catalog.v1",
+  "runtime_sample_size": {"min": 6, "max": 8},
+  "candidate_roles": [
+    "cover",
+    "section",
+    "dense-content-a",
+    "dense-content-b",
+    "image-led",
+    "process",
+    "relationship",
+    "data",
+    "comparison",
+    "case",
+    "summary",
+    "wildcard"
+  ],
+  "required_runtime_roles": ["opening", "dense-content", "image-led", "process-or-relationship", "data-or-comparison"],
+  "sets": [
+    {
+      "id": "strategy-bright-argument",
+      "scene": "strategy-consulting",
+      "name_zh": "明快论证型",
+      "intent": "用清晰结论、证据和框架完成高密度论证。",
+      "background": "light",
+      "image_dependency": "low",
+      "formality": "formal",
+      "density_capacity": "high",
+      "approved": false
+    },
+    {
+      "id": "strategy-executive-decision",
+      "scene": "strategy-consulting",
+      "name_zh": "高管决策型",
+      "intent": "用强对比和单页单结论突出风险、数字与行动。",
+      "background": "dark",
+      "image_dependency": "low",
+      "formality": "formal",
+      "density_capacity": "medium",
+      "approved": false
+    },
+    {
+      "id": "finance-calm-data",
+      "scene": "finance-operations",
+      "name_zh": "冷静数据型",
+      "intent": "以数字对齐、趋势和可核查比较服务经营分析。",
+      "background": "light",
+      "image_dependency": "low",
+      "formality": "formal",
+      "density_capacity": "high",
+      "approved": false
+    },
+    {
+      "id": "finance-editorial-annual",
+      "scene": "finance-operations",
+      "name_zh": "编辑年报型",
+      "intent": "结合大数字、业务影像和出版层级形成年度叙事。",
+      "background": "light",
+      "image_dependency": "medium",
+      "formality": "formal",
+      "density_capacity": "medium",
+      "approved": false
+    },
+    {
+      "id": "work-structured-execution",
+      "scene": "work-report",
+      "name_zh": "结构化执行型",
+      "intent": "让目标、进度、责任、风险和下一步快速可扫描。",
+      "background": "light",
+      "image_dependency": "low",
+      "formality": "standard",
+      "density_capacity": "high",
+      "approved": false
+    },
+    {
+      "id": "work-narrative-review",
+      "scene": "work-report",
+      "name_zh": "叙事复盘型",
+      "intent": "借助节点、证据和前后对比解释过程与成果。",
+      "background": "light",
+      "image_dependency": "high",
+      "formality": "standard",
+      "density_capacity": "medium",
+      "approved": false
+    },
+    {
+      "id": "product-systems-engineering",
+      "scene": "product-technology",
+      "name_zh": "系统工程型",
+      "intent": "以架构、数据流、约束和指标解释系统内部。",
+      "background": "dark",
+      "image_dependency": "low",
+      "formality": "standard",
+      "density_capacity": "high",
+      "approved": false
+    },
+    {
+      "id": "product-experience",
+      "scene": "product-technology",
+      "name_zh": "产品体验型",
+      "intent": "以截图、用户路径和场景结果解释产品价值。",
+      "background": "light",
+      "image_dependency": "high",
+      "formality": "standard",
+      "density_capacity": "medium",
+      "approved": false
+    },
+    {
+      "id": "brand-vibrant-campaign",
+      "scene": "brand-marketing",
+      "name_zh": "活力传播型",
+      "intent": "用鲜明节奏和强层级突出传播主题与行动。",
+      "background": "mixed",
+      "image_dependency": "high",
+      "formality": "expressive",
+      "density_capacity": "medium",
+      "approved": false
+    },
+    {
+      "id": "brand-premium-storytelling",
+      "scene": "brand-marketing",
+      "name_zh": "品质叙事型",
+      "intent": "用高质量影像和编辑层级建立长期品牌质感。",
+      "background": "light",
+      "image_dependency": "high",
+      "formality": "standard",
+      "density_capacity": "medium",
+      "approved": false
+    },
+    {
+      "id": "academic-rigorous-defense",
+      "scene": "academic-research",
+      "name_zh": "严谨答辩型",
+      "intent": "让问题、方法、实验、数据、结论和引用可追溯。",
+      "background": "light",
+      "image_dependency": "low",
+      "formality": "formal",
+      "density_capacity": "high",
+      "approved": false
+    },
+    {
+      "id": "academic-research-atlas",
+      "scene": "academic-research",
+      "name_zh": "研究图集型",
+      "intent": "以实验图、地图、样本和证据演化呈现发现路径。",
+      "background": "dark",
+      "image_dependency": "high",
+      "formality": "standard",
+      "density_capacity": "medium",
+      "approved": false
+    },
+    {
+      "id": "teaching-clear-decomposition",
+      "scene": "teaching-training",
+      "name_zh": "清晰拆解型",
+      "intent": "按概念、步骤、示例、练习和总结渐进展开。",
+      "background": "light",
+      "image_dependency": "low",
+      "formality": "standard",
+      "density_capacity": "high",
+      "approved": false
+    },
+    {
+      "id": "teaching-contextual-inquiry",
+      "scene": "teaching-training",
+      "name_zh": "情境启发型",
+      "intent": "用问题情境、案例和一致插图推动理解与参与。",
+      "background": "light",
+      "image_dependency": "high",
+      "formality": "expressive",
+      "density_capacity": "medium",
+      "approved": false
+    }
+  ]
+}
