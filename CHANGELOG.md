@@ -4,6 +4,13 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-09-01
+
+### Fixed
+
+- Fixed overly restrictive template and series constraints that could make later decks reuse the
+  same page count, page sequence, and per-page layouts with only the text changed.
+
 ### Added
 
 - Added independent page-count evidence and content-first planning for every new deck.
