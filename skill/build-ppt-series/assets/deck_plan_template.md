@@ -8,9 +8,21 @@
 - audience:
 - presentation_context:
 - source_scope:
-- target_page_count:
 - language:
 - approval_mode: guided
+
+## Planning Basis
+
+- presentation_duration:
+- content_complexity:
+- estimated_page_range:
+- selected_page_count:
+- page_count_reason:
+- previous_deck_page_count_used: false
+
+Derive the page range and selected count from this deck's sources, audience, duration, and content
+complexity before reading any previous deck's page plan. Equal page counts are allowed only when
+independently justified; never use a previous deck's count as a default or target.
 
 ## Outcomes
 

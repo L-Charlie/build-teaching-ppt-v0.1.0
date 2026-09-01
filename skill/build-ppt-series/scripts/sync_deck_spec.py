@@ -21,20 +21,33 @@ def lock_version(text: str) -> str:
     return match.group(1) if match else "unknown"
 
 
-def optional_text(path: Path) -> str:
-    return path.read_text(encoding="utf-8") if path.exists() else ""
-
-
 def optional_hash(path: Path) -> str:
     return file_hash(path) if path.exists() else "missing"
 
 
 def plan_issues(text: str) -> list[str]:
     issues: list[str] = []
-    for field in ("title", "audience", "presentation_context", "source_scope"):
-        match = re.search(rf"(?m)^-\s+{field}:\s*(.*)$", text)
-        if not match or not match.group(1).strip():
+    for field in (
+        "title",
+        "audience",
+        "presentation_context",
+        "source_scope",
+        "estimated_page_range",
+        "selected_page_count",
+        "page_count_reason",
+    ):
+        values = re.findall(rf"(?m)^-\s+{field}:\s*(.*)$", text)
+        if not any(value.strip() for value in values):
             issues.append(f"missing deck plan field: {field}")
+    previous_count = re.search(
+        r"(?m)^-\s+previous_deck_page_count_used:\s*(true|false)\s*$",
+        text,
+        re.IGNORECASE,
+    )
+    if not previous_count:
+        issues.append("missing deck plan field: previous_deck_page_count_used")
+    elif previous_count.group(1).lower() != "false":
+        issues.append("previous_deck_page_count_used must be false")
     rows = [
         line
         for line in text.splitlines()
@@ -90,7 +103,7 @@ def sync(
         shutil.copy2(target, backup / f"spec_lock-{stamp}.md")
     parent_text = parent.read_text(encoding="utf-8")
     snapshot = f"""---
-schema: ppt-series-execution-lock.v2
+schema: ppt-series-design-snapshot.v3
 scope: deck-snapshot
 generated_snapshot: true
 generated_at: "{datetime.now(timezone.utc).isoformat()}"
@@ -109,13 +122,9 @@ deck_overrides_sha256: "{file_hash(overrides)}"
 Do not edit this generated snapshot. Edit the series lock, deck plan, or deck overrides, then
 regenerate it with `sync_deck_spec.py --force`.
 
-## Deck Plan
-
-{optional_text(plan).strip()}
-
-## Deck Overrides
-
-{optional_text(overrides).strip()}
+This snapshot deliberately does not embed the deck plan, page count, page sequence, page rhythm,
+or page-by-page layout mapping. Read the referenced plan only while producing this deck. Never use
+another deck's plan to initialize or structure a new deck.
 
 ## Inherited Series Lock
 
